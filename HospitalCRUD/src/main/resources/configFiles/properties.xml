@@ -4,4 +4,8 @@
     <comment>XML file</comment>
     <entry key="xmlClientPath">data/client.xml</entry>
     <entry key="xmlMedRecordPath">data\medRecords.xml</entry>
+    <entry key="urlDB">jdbc:mysql://dam2.mysql.iesquevedo.es:3335/maksim_hospital</entry>
+    <entry key="user_name">root</entry>
+    <entry key="password">quevedo2dam</entry>
+    <entry key="driver">com.mysql.cj.jdbc.Driver</entry>
 </properties>

@@ -1,4 +1,4 @@
-package com.hospitalcrud.mappers;
+package com.hospitalcrud.dao.mappers.files;
 
 import com.hospitalcrud.domain.model.DoctorUI;
 

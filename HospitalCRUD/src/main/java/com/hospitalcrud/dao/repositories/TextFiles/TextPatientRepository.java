@@ -3,7 +3,7 @@ package com.hospitalcrud.dao.repositories.TextFiles;
 import com.hospitalcrud.config.Configuration;
 import com.hospitalcrud.dao.model.Patient;
 import com.hospitalcrud.dao.repositories.PatientRepository;
-import com.hospitalcrud.mappers.PatientRowMapper;
+import com.hospitalcrud.dao.mappers.files.PatientRowMapper;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
@@ -19,7 +19,7 @@ import java.util.List;
 
 @Log4j2
 @Repository
-@Profile("enDesarrollo")
+@Profile("no")
 public class TextPatientRepository implements PatientRepository {
 
     PatientRowMapper patientRowMapper = new PatientRowMapper();

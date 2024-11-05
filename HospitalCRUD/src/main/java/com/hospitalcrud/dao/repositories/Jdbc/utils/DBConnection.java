@@ -1,24 +1,24 @@
 package com.hospitalcrud.dao.repositories.Jdbc.utils;
 
-import jakarta.inject.Inject;
+
+import com.hospitalcrud.config.ConfigurationXml;
+import org.springframework.stereotype.Component;
 
 import java.sql.*;
 
-/**
- *  @description Class for creating a connection to a DB using DriverManager class.
- *  Reads the information from a property file (mysql-properties.xml)
- */
 
 
-class DBConnection {
 
-	private Configuration config;
+@Component
+public class DBConnection {
+
+	private ConfigurationXml config;
 
 	/**
 	 * Opens Database connection
 	 */
-	@Inject
-	public DBConnection(Configuration config) {
+
+	public DBConnection(ConfigurationXml config) {
 		this.config = config;
 	}
 

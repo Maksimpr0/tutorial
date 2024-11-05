@@ -1,6 +1,6 @@
 package com.hospitalcrud.dao.model;
 
-import com.hospitalcrud.mappers.LocalDateAdapter;
+import com.hospitalcrud.dao.mappers.files.LocalDateAdapter;
 import jakarta.xml.bind.annotation.*;
 import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import lombok.*;

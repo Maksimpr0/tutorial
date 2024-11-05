@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-@Profile("enDesarrollo")
+@Profile("null")
 public class StaticPatientRepository implements PatientRepository {
 
     public List<Patient> getAll() {

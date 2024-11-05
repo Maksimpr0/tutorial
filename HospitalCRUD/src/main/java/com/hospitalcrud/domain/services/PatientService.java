@@ -2,22 +2,19 @@ package com.hospitalcrud.domain.services;
 
 import com.hospitalcrud.dao.model.Patient;
 import com.hospitalcrud.dao.repositories.PatientRepository;
-import com.hospitalcrud.dao.repositories.TextFiles.TextPatientRepository;
-import com.hospitalcrud.dao.repositories.staticDao.StaticPatientRepository;
 import com.hospitalcrud.domain.model.PatientUI;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
 @Service
 public class PatientService {
 
     private int num = 3;
-    private final TextPatientRepository textPatientRepository;
+    private final PatientRepository textPatientRepository;
 
-    public PatientService(TextPatientRepository textPatientRepository) {
+    public PatientService(PatientRepository textPatientRepository) {
         this.textPatientRepository = textPatientRepository;
     }
 
